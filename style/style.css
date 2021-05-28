@@ -54,7 +54,8 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
     }
 } */
 
-section>* {
+/* Section Home */
+#home>* {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -62,23 +63,93 @@ section>* {
     justify-self: center;
 }
 
-em {
-    font-family: 'Poiret One', cursive;
-    font-size: 72px;
-    font-style: normal;
-    text-transform: uppercase;
+#home>*>button {
+    width: 250px;
+    height: 3em;
+    border-radius: 2em;
+    border-color: transparent;
+    background-color: #E85546;
     color: #ffffff;
-    text-align: center;
 }
 
 #home {
     display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: column;
     width:100%;
     min-height: 100vh; /* vw */
     margin: 0 auto;
     background: url(../images/hero.png) no-repeat center fixed; 
-   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-   background-size: cover; 
- }
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; 
+}
+
+#home>*>h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Section Our Works */
+#our-works {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+#our-works>* {
+    /* border: solid 1px black; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#our-works>h1 {
+    /* border: solid 1px black; */
+    font-family: 'Poiret One', cursive;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #2C3E50;
+}
+
+#our-works>em {
+    /* border: solid 1px black; */
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-size: 22px;
+    color: #8E8C89;
+}
+
+#our-works>.container {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+#our-works>.container>.img-grid {
+    /* border: solid 1px black; */
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+}
+
+#our-works>.container>.img-grid>img {
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+}
