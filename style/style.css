@@ -18,11 +18,13 @@
 /* Navbar */
 header {
     /* border: solid 1px black; */
+    display: flex;
+    width: 100%;
     min-height: 3em;
     background-color: #E85546;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
 }
 
 header>* {
@@ -109,6 +111,7 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
 #our-works>* {
     /* border: solid 1px black; */
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     margin-top: 5rem;
@@ -152,4 +155,131 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
 #our-works>.container>.img-grid>img {
     margin-left: 0.5em;
     margin-bottom: 1em;
+}
+
+/* Pricing Section */
+#pricing {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto; 
+}
+
+#pricing>* {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#pricing>h1 {
+    /* border: solid 1px black; */
+    font-family: 'Poiret One', cursive;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #2C3E50;
+}
+
+#pricing>em {
+    /* border: solid 1px black; */
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-size: 22px;
+    color: #8E8C89;
+}
+
+#pricing>.container {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+#pricing>.container>.pricing-card {
+    border: solid 1px #dddddd;
+    border-radius: 0.2em;
+    margin: 1em;
+    width: 250px;
+    min-height: 350px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#pricing>.container>*>.card-header {
+    padding: 2em;
+}
+
+#pricing>.container>.pricing-card>.card-header {
+    background-color: #F5F5F5;
+}
+
+#pricing>.container>.blue-card>.card-header {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+#pricing>.container>.pricing-card>*>h2 {
+    font-size: 38px;
+    font-weight: 100;
+}
+
+#pricing>.container>.pricing-card>ul {
+    list-style: none;
+}
+
+
+#pricing>.container>.pricing-card>*>li {
+    margin: 1em;
+}
+
+#pricing>.container>*>button {
+    text-transform: uppercase;
+    padding: 1em;
+    width: 200px;
+    border-radius: 0.5em;
+    border-color: transparent;
+    margin: 1em;
+}
+
+#pricing>.container>.pricing-card>button {
+    background-color: #2C3E50;
+    color: #ffffff;
+}
+
+#pricing>.container>.blue-card {
+    border: solid 1px #3498DB;
+    border-radius: 0.2em;
+    margin: 1em;
+    width: 250px;
+    min-height: 350px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#pricing>.container>.blue-card>*>h2 {
+    font-size: 38px;
+    font-weight: 100;
+}
+
+#pricing>.container>.blue-card>ul {
+    list-style: none;
+}
+
+#pricing>.container>.blue-card>ul>li {
+    margin: 1em
+}
+
+#pricing>.container>.blue-card>button {
+    font-weight:100;
+    background-color: #3498DB;
+    color: #ffffff;
 }
