@@ -28,6 +28,7 @@ header {
 }
 
 header>* {
+    /* border: solid 1px black; */
     padding: 0 20px;
 }
 
@@ -46,14 +47,8 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
     text-transform: uppercase;
 }
 
-@media screen and (max-width:279px) {
-    header>nav {
-        display: flex;
-        flex-direction: column;
-    }
-    header {
-        flex-direction: column;
-    }
+@media screen and (max-width:414px) {
+
 }
 
 /* Section Home */
@@ -102,6 +97,26 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
     margin-top: 5em;
 }
 
+@media screen and (max-width:414px) {
+    header>nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+    }
+    #home>*>h1 {
+        margin-top: 1em;
+    }
+    #home>*>img {
+        margin-top: 12em;
+    }
+    #home>*>button {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}
+
 /* Section Our Works */
 #our-works {
     /* border: solid 1px black; */
@@ -124,6 +139,10 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
 
 #our-works>h1 {
     /* border: solid 1px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poiret One', cursive;
     font-size: 68px;
     font-style: normal;
@@ -161,6 +180,12 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
 #our-works>.container>.img-grid>img {
     margin-left: 0.3em;
     margin-bottom: 1em;
+}
+
+@media screen and (max-width:414px) {
+    #our-works>.container>.img-grid {
+        width: 100%
+    }
 }
 
 /* Pricing Section */
@@ -413,8 +438,30 @@ header>nav>a, header>nav>a:hover header>nav>a:visited {
     min-width: 80px;
 }
 
+@media screen and (max-width:414px) {
+    #contact>form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    #contact>form>.form-col1 {
+        /* border: solid 1px blue; */
+        width: 100%;
+        /* padding: 1em; */
+    }
+    #contact>form>.form-col2 {
+        width: 100%;
+    }
+}
+
+
 footer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 20vh;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    color: #8E8C89;
 }
